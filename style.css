@@ -1,0 +1,199 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+}
+
+.encabezado {
+  background-color: #111;
+  padding: 20px;
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.intro {
+  padding: 40px 20px;
+}
+
+.intro h2 {
+  font-size: 2em;
+  color: #ff6600;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 12px 25px;
+  background-color: #ff6600;
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1em;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.boton:hover {
+  background-color: #cc5200;
+}
+
+.pie {
+  background-color: #111;
+  padding: 20px;
+  font-size: 0.9em;
+}
+
+.pie a {
+  color: #ff6600;
+  text-decoration: none;
+}
+
+.pie a:hover {
+  text-decoration: underline;
+}
+
+.catalogo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px 20px;
+}
+
+.producto {
+  background-color: #1a1a1a;
+  padding: 20px;
+  border-radius: 10px;
+  width: 280px;
+  box-shadow: 0 0 10px rgba(255, 102, 0, 0.3);
+  transition: transform 0.3s;
+}
+
+.producto:hover {
+  transform: translateY(-5px);
+}
+
+.producto img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.producto h3 {
+  color: #ff6600;
+  margin: 15px 0 10px;
+}
+
+.producto p {
+  margin: 0;
+  font-size: 1.1em;
+}
+
+.product-card {
+  background-color: #1a1a1a;
+  padding: 30px 20px;
+  max-width: 500px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 20px #ff5c00;
+}
+
+.product-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.product-title {
+  font-weight: bold;
+  font-size: 20px;
+  color: #ff6600;
+  margin-top: 15px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 10px 0;
+  color: white;
+}
+
+.description {
+  font-size: 14px;
+  margin-bottom: 20px;
+  padding: 0 10px;
+}
+
+.paypal-container {
+  display: flex;
+  justify-content: center;
+}
+
+label, select, input[type="number"] {
+  font-size: 1em;
+  margin: 10px auto;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  max-width: 200px;
+  display: block;
+  background-color: #2a2a2a;
+  color: #fff;
+}
+
+.paypal-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    padding: 20px 10px;
+  }
+
+  .logo {
+    max-width: 100px;
+  }
+
+  .product-title {
+    font-size: 18px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+}
+/* Estilos para formularios (inputs, textarea y botón) */
+input[type="text"],
+input[type="email"],
+textarea {
+  font-size: 1em;
+  margin: 10px auto;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  max-width: 400px;
+  width: 100%;
+  background-color: #2a2a2a;
+  color: #fff;
+  display: block;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+form {
+  margin-top: 20px;
+}
+
+form .boton {
+  margin-top: 20px;
+  cursor: pointer;
+}
